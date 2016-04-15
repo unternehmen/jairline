@@ -1,0 +1,9 @@
+﻿# To Do
+
+This file contains notes on possible design choices for the future.
+
+* Allow users to input their names to show on the seating chart.
+  Right now, you cannot distinguish one group from another on the
+  chart.
+
+* Switch to a Swing-based GUI.
