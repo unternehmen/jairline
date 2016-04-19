@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.Scanner;
 
 public class AirplaneTest
@@ -8,7 +9,7 @@ public class AirplaneTest
     System.out.println ("3 - Exit");
   }
   
-  public AirplaneTest () {
+  public AirplaneTest () throws IOException, ClassNotFoundException {
     String line;
     Scanner scanner;
     Airplane airplane;
@@ -35,6 +36,7 @@ public class AirplaneTest
         System.out.println ("Select a command...");
         listCommands ();
       } else if (line.equals ("3")) {
+        airplane.saveFile();
         done = true;
       } else {
         System.out.println ("Unrecognized command '" + line + "'");
