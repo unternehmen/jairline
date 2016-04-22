@@ -46,7 +46,7 @@ public class Airplane {
     }
   }
 
-  public void addPassenger(int classChoice, int passengers, int position) {
+  public void addPassenger(int classChoice, String passengers, int position) {
     String chosenClass[][];
     int numOfTravelers, i, j, k, keyColumns[], matchRow, matchCol;
     boolean matched, hasKey;
@@ -59,8 +59,15 @@ public class Airplane {
       returnMessage = "Improper choice.";
       return;
     }
-    numPassengers = passengers;
-    numOfTravelers = passengers;
+    
+    if (passengers.equals("")){
+        returnMessage = "Please enter a number of pasengers.";
+        return;
+    }
+    else {
+        numPassengers = Integer.parseInt(passengers);
+        numOfTravelers = Integer.parseInt(passengers);
+    }
 
     /* The way this seating algorithm works is it makes sure all of the
      * travelers can sit in the same row, together, and that at least one

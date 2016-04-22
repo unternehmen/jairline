@@ -1005,13 +1005,15 @@ public class JairlineGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_rbtnFirstClassActionPerformed
 
     private void btnBookItActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBookItActionPerformed
-        myPlane.addPassenger(classChoice, Integer.parseInt(txtFldNumTraveling.getText()), position);   
+        myPlane.addPassenger(classChoice, txtFldNumTraveling.getText(), position);   
         checkSeatingAvailability();
         jTextPane1.setText(myPlane.returnMessageForSeating());
         txtFldNumTraveling.setText("");
         btngropupClasses.clearSelection();
         btngroupSeatingPosition.clearSelection();
         rbtnMiddle.setEnabled(true);
+        classChoice = 0;
+        position = 0;
         try{
             myPlane.saveFile();
         }
