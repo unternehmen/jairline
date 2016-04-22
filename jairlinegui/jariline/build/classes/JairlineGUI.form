@@ -37,14 +37,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="rbtnWindow" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="rbtnAsile" min="-2" max="-2" attributes="0"/>
-                          <Component id="rbtnMiddle" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
+                  <Component id="txtFldAvailableSeats" alignment="0" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -57,10 +50,12 @@
                           </Group>
                           <Component id="btnBookIt" min="-2" max="-2" attributes="0"/>
                           <Component id="lblSeatingPosition" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="rbtnWindow" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="rbtnAsile" min="-2" max="-2" attributes="0"/>
+                          <Component id="rbtnMiddle" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="53" max="32767" attributes="0"/>
                   </Group>
-                  <Component id="txtFldAvailableSeats" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -1006,7 +1001,7 @@
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="btngroupSeatingPosition"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Middle (Economy Only)"/>
+        <Property name="text" type="java.lang.String" value="Middle"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtnMiddleActionPerformed"/>

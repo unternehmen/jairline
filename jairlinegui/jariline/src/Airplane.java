@@ -45,18 +45,18 @@ public class Airplane {
     }
   }
 
-  public void addPassenger(String classChoice, int passengers, String position) {
+  public void addPassenger(int classChoice, int passengers, int position) {
     String line;
     String chosenClass[][];
     int numOfTravelers, i, j, k, keyColumns[], matchRow, matchCol;
     boolean matched, hasKey;
 
-    if (classChoice.equals("First")) {
+    if (classChoice == 1) {
       chosenClass = firstClass;
-    } else if (classChoice.equals("Economy")) {
+    } else if (classChoice == 2) {
       chosenClass = economyClass;
     } else {
-      returnMessage = "Improper choice.  Returning to main menu.";
+      returnMessage = "Improper choice.";
       return;
     }
     numOfTravelers = passengers;
@@ -79,7 +79,7 @@ public class Airplane {
 
     keyColumns = new int[2];
 
-    if (position.equals("Window")) {
+    if (position == 1) {
       keyColumns[0] = 0;
 
       if (chosenClass == economyClass) {
@@ -87,7 +87,7 @@ public class Airplane {
       } else {
         keyColumns[1] = 3;
       }
-    } else if (position.equals("Asile")) {
+    } else if (position == 2) {
       if (chosenClass == economyClass) {
         keyColumns[0] = 2;
         keyColumns[1] = 3;
@@ -95,11 +95,11 @@ public class Airplane {
         keyColumns[0] = 1;
         keyColumns[1] = 2;
       }
-    } else if (chosenClass == economyClass && position.equals("Middle (Economy Only)")) {
+    } else if (chosenClass == economyClass && position == 3) {
       keyColumns[0] = 1;
       keyColumns[2] = 4;
     } else {
-      returnMessage = "Improper choice.  Returning to main menu.";
+      returnMessage = "Improper choice.";
       return;
     }
 

@@ -267,7 +267,7 @@ public class JairlineGUI extends javax.swing.JFrame {
         });
 
         btngroupSeatingPosition.add(rbtnMiddle);
-        rbtnMiddle.setText("Middle (Economy Only)");
+        rbtnMiddle.setText("Middle");
         rbtnMiddle.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rbtnMiddleActionPerformed(evt);
@@ -285,12 +285,7 @@ public class JairlineGUI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(rbtnWindow)
-                            .addComponent(rbtnAsile)
-                            .addComponent(rbtnMiddle)))
+                    .addComponent(txtFldAvailableSeats)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -301,9 +296,11 @@ public class JairlineGUI extends javax.swing.JFrame {
                                 .addComponent(lblTravelers, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(lblSeatAvability))
                             .addComponent(btnBookIt)
-                            .addComponent(lblSeatingPosition))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(txtFldAvailableSeats))
+                            .addComponent(lblSeatingPosition)
+                            .addComponent(rbtnWindow)
+                            .addComponent(rbtnAsile)
+                            .addComponent(rbtnMiddle))
+                        .addGap(0, 53, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -779,18 +776,23 @@ public class JairlineGUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void rbtnEconomyClassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtnEconomyClassActionPerformed
-        classChoice = rbtnEconomyClass.getText();
+        classChoice = 2;
+        rbtnMiddle.setVisible(true);
     }//GEN-LAST:event_rbtnEconomyClassActionPerformed
 
     private void rbtnFirstClassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtnFirstClassActionPerformed
-        classChoice = rbtnFirstClass.getText();
+        classChoice = 1;
+        rbtnMiddle.setVisible(false);
     }//GEN-LAST:event_rbtnFirstClassActionPerformed
 
     private void btnBookItActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBookItActionPerformed
-        myPlane.addPassenger(classChoice,Integer.parseInt(txtFldNumTraveling.getText()), position);   
+        myPlane.addPassenger(classChoice, Integer.parseInt(txtFldNumTraveling.getText()), position);   
         checkSeatingAvailability();
         txtFldAvailableSeats.setText(myPlane.returnMessageForSeating());
         txtFldNumTraveling.setText("");
+        btngropupClasses.clearSelection();
+        btngroupSeatingPosition.clearSelection();
+        rbtnMiddle.setVisible(true);
         try{
             myPlane.saveFile();
         }
@@ -803,367 +805,367 @@ public class JairlineGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBookItActionPerformed
 
     private void rbtnWindowActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtnWindowActionPerformed
-        position = rbtnWindow.getText();
+        position = 1;
     }//GEN-LAST:event_rbtnWindowActionPerformed
 
     private void rbtnAsileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtnAsileActionPerformed
-        position = rbtnAsile.getText();
+        position = 2;
     }//GEN-LAST:event_rbtnAsileActionPerformed
 
     private void rbtnMiddleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtnMiddleActionPerformed
-        position = rbtnMiddle.getText();
+        position = 3;
     }//GEN-LAST:event_rbtnMiddleActionPerformed
 
     private void checkSeatingAvailability(){
         /*FIRST CLASS*/
-        if(!myPlane.returnFirstSeating(0,0).equals("")){
+        if(myPlane.returnFirstSeating(0,0).equals("X")){
             f00.setBackground(Color.red);
         }
-        if(!myPlane.returnFirstSeating(0,1).equals("")){
+        if(myPlane.returnFirstSeating(0,1).equals("X")){
             f10.setBackground(Color.red);
         }
-        if(!myPlane.returnFirstSeating(0,2).equals("")){
+        if(myPlane.returnFirstSeating(0,2).equals("X")){
             f20.setBackground(Color.red);
         }
-        if(!myPlane.returnFirstSeating(0,3).equals("")){
+        if(myPlane.returnFirstSeating(0,3).equals("X")){
             f30.setBackground(Color.red);
         }
         /*NEW ROW*/
-        if(!myPlane.returnFirstSeating(1,0).equals("")){
+        if(myPlane.returnFirstSeating(1,0).equals("X")){
             f01.setBackground(Color.red);
         }
-        if(!myPlane.returnFirstSeating(1,1).equals("")){
+        if(myPlane.returnFirstSeating(1,1).equals("X")){
             f11.setBackground(Color.red);
         }
-        if(!myPlane.returnFirstSeating(1,2).equals("")){
+        if(myPlane.returnFirstSeating(1,2).equals("X")){
             f21.setBackground(Color.red);
         }
-        if(!myPlane.returnFirstSeating(1,3).equals("")){
+        if(myPlane.returnFirstSeating(1,3).equals("X")){
             f31.setBackground(Color.red);
         }
         /*NEW ROW*/
-        if(!myPlane.returnFirstSeating(2,0).equals("")){
+        if(myPlane.returnFirstSeating(2,0).equals("X")){
             f02.setBackground(Color.red);
         }
-        if(!myPlane.returnFirstSeating(2,1).equals("")){
+        if(myPlane.returnFirstSeating(2,1).equals("X")){
             f12.setBackground(Color.red);
         }
-        if(!myPlane.returnFirstSeating(2,2).equals("")){
+        if(myPlane.returnFirstSeating(2,2).equals("X")){
             f22.setBackground(Color.red);
         }
-        if(!myPlane.returnFirstSeating(2,3).equals("")){
+        if(myPlane.returnFirstSeating(2,3).equals("X")){
             f32.setBackground(Color.red);
         }
         /*NEW ROW*/
-        if(!myPlane.returnFirstSeating(3,0).equals("")){
+        if(myPlane.returnFirstSeating(3,0).equals("X")){
             f03.setBackground(Color.red);
         }
-        if(!myPlane.returnFirstSeating(3,1).equals("")){
+        if(myPlane.returnFirstSeating(3,1).equals("X")){
             f13.setBackground(Color.red);
         }
-        if(!myPlane.returnFirstSeating(3,2).equals("")){
+        if(myPlane.returnFirstSeating(3,2).equals("X")){
             f23.setBackground(Color.red);
         }
-        if(!myPlane.returnFirstSeating(3,3).equals("")){
+        if(myPlane.returnFirstSeating(3,3).equals("X")){
             f33.setBackground(Color.red);
         }
         /*NEW ROW*/
-        if(!myPlane.returnFirstSeating(4,0).equals("")){
+        if(myPlane.returnFirstSeating(4,0).equals("X")){
             f04.setBackground(Color.red);
         }
-        if(!myPlane.returnFirstSeating(4,1).equals("")){
+        if(myPlane.returnFirstSeating(4,1).equals("X")){
             f14.setBackground(Color.red);
         }
-        if(!myPlane.returnFirstSeating(4,2).equals("")){
+        if(myPlane.returnFirstSeating(4,2).equals("X")){
             f24.setBackground(Color.red);
         }
-        if(!myPlane.returnFirstSeating(4,3).equals("")){
+        if(myPlane.returnFirstSeating(4,3).equals("X")){
             f34.setBackground(Color.red);
         }
         
         /*ECONOMY*/
-        if(!myPlane.returnEconomySeating(0,0).equals("")){
+        if(myPlane.returnEconomySeating(0,0).equals("X")){
             e00.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(0,1).equals("")){
+        if(myPlane.returnEconomySeating(0,1).equals("X")){
             e10.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(0,2).equals("")){
+        if(myPlane.returnEconomySeating(0,2).equals("X")){
             e20.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(0,3).equals("")){
+        if(myPlane.returnEconomySeating(0,3).equals("X")){
             e30.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(0,4).equals("")){
+        if(myPlane.returnEconomySeating(0,4).equals("X")){
             e40.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(0,5).equals("")){
+        if(myPlane.returnEconomySeating(0,5).equals("X")){
             e50.setBackground(Color.red);
         }
         /*NEW ROW*/
-        if(!myPlane.returnEconomySeating(1,0).equals("")){
+        if(myPlane.returnEconomySeating(1,0).equals("X")){
             e01.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(1,1).equals("")){
+        if(myPlane.returnEconomySeating(1,1).equals("X")){
             e11.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(1,2).equals("")){
+        if(myPlane.returnEconomySeating(1,2).equals("X")){
             e21.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(1,3).equals("")){
+        if(myPlane.returnEconomySeating(1,3).equals("X")){
             e31.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(1,4).equals("")){
+        if(myPlane.returnEconomySeating(1,4).equals("X")){
             e41.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(1,5).equals("")){
+        if(myPlane.returnEconomySeating(1,5).equals("X")){
             e51.setBackground(Color.red);
         }
         /*NEW ROW*/
-        if(!myPlane.returnEconomySeating(2,0).equals("")){
+        if(myPlane.returnEconomySeating(2,0).equals("X")){
             e02.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(2,1).equals("")){
+        if(myPlane.returnEconomySeating(2,1).equals("X")){
             e12.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(2,2).equals("")){
+        if(myPlane.returnEconomySeating(2,2).equals("X")){
             e22.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(2,3).equals("")){
+        if(myPlane.returnEconomySeating(2,3).equals("X")){
             e32.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(2,4).equals("")){
+        if(myPlane.returnEconomySeating(2,4).equals("X")){
             e42.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(2,5).equals("")){
+        if(myPlane.returnEconomySeating(2,5).equals("X")){
             e52.setBackground(Color.red);
         }
         /*NEW ROW*/
-        if(!myPlane.returnEconomySeating(3,0).equals("")){
+        if(myPlane.returnEconomySeating(3,0).equals("X")){
             e03.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(3,1).equals("")){
+        if(myPlane.returnEconomySeating(3,1).equals("X")){
             e13.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(3,2).equals("")){
+        if(myPlane.returnEconomySeating(3,2).equals("X")){
             e23.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(3,3).equals("")){
+        if(myPlane.returnEconomySeating(3,3).equals("X")){
             e33.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(3,4).equals("")){
+        if(myPlane.returnEconomySeating(3,4).equals("X")){
             e43.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(3,5).equals("")){
+        if(myPlane.returnEconomySeating(3,5).equals("X")){
             e53.setBackground(Color.red);
         }
         /*NEW ROW*/
-        if(!myPlane.returnEconomySeating(4,0).equals("")){
+        if(myPlane.returnEconomySeating(4,0).equals("X")){
             e04.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(4,1).equals("")){
+        if(myPlane.returnEconomySeating(4,1).equals("X")){
             e14.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(4,2).equals("")){
+        if(myPlane.returnEconomySeating(4,2).equals("X")){
             e24.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(4,3).equals("")){
+        if(myPlane.returnEconomySeating(4,3).equals("X")){
             e34.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(4,4).equals("")){
+        if(myPlane.returnEconomySeating(4,4).equals("X")){
             e44.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(4,5).equals("")){
+        if(myPlane.returnEconomySeating(4,5).equals("X")){
             e54.setBackground(Color.red);
         }
         /*NEW ROW*/
-        if(!myPlane.returnEconomySeating(5,0).equals("")){
+        if(myPlane.returnEconomySeating(5,0).equals("X")){
             e05.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(5,1).equals("")){
+        if(myPlane.returnEconomySeating(5,1).equals("X")){
             e15.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(5,2).equals("")){
+        if(myPlane.returnEconomySeating(5,2).equals("X")){
             e25.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(5,3).equals("")){
+        if(myPlane.returnEconomySeating(5,3).equals("X")){
             e35.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(5,4).equals("")){
+        if(myPlane.returnEconomySeating(5,4).equals("X")){
             e45.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(5,5).equals("")){
+        if(myPlane.returnEconomySeating(5,5).equals("X")){
             e55.setBackground(Color.red);
         }
         /*NEW ROW*/
-        if(!myPlane.returnEconomySeating(6,0).equals("")){
+        if(myPlane.returnEconomySeating(6,0).equals("X")){
             e06.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(6,1).equals("")){
+        if(myPlane.returnEconomySeating(6,1).equals("X")){
             e16.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(6,2).equals("")){
+        if(myPlane.returnEconomySeating(6,2).equals("X")){
             e26.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(6,3).equals("")){
+        if(myPlane.returnEconomySeating(6,3).equals("X")){
             e36.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(6,4).equals("")){
+        if(myPlane.returnEconomySeating(6,4).equals("X")){
             e46.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(6,5).equals("")){
+        if(myPlane.returnEconomySeating(6,5).equals("X")){
             e56.setBackground(Color.red);
         }
         /*NEW ROW*/
-        if(!myPlane.returnEconomySeating(7,0).equals("")){
+        if(myPlane.returnEconomySeating(7,0).equals("X")){
             e07.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(7,1).equals("")){
+        if(myPlane.returnEconomySeating(7,1).equals("X")){
             e17.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(7,2).equals("")){
+        if(myPlane.returnEconomySeating(7,2).equals("X")){
             e27.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(7,3).equals("")){
+        if(myPlane.returnEconomySeating(7,3).equals("X")){
             e37.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(7,4).equals("")){
+        if(myPlane.returnEconomySeating(7,4).equals("X")){
             e47.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(7,5).equals("")){
+        if(myPlane.returnEconomySeating(7,5).equals("X")){
             e57.setBackground(Color.red);
         }
         /*NEW ROW*/
-        if(!myPlane.returnEconomySeating(8,0).equals("")){
+        if(myPlane.returnEconomySeating(8,0).equals("X")){
             e08.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(8,1).equals("")){
+        if(myPlane.returnEconomySeating(8,1).equals("X")){
             e18.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(8,2).equals("")){
+        if(myPlane.returnEconomySeating(8,2).equals("X")){
             e28.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(8,3).equals("")){
+        if(myPlane.returnEconomySeating(8,3).equals("X")){
             e38.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(8,4).equals("")){
+        if(myPlane.returnEconomySeating(8,4).equals("X")){
             e48.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(8,5).equals("")){
+        if(myPlane.returnEconomySeating(8,5).equals("X")){
             e58.setBackground(Color.red);
         }
         /*NEW ROW*/
-        if(!myPlane.returnEconomySeating(9,0).equals("")){
+        if(myPlane.returnEconomySeating(9,0).equals("X")){
             e09.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(9,1).equals("")){
+        if(myPlane.returnEconomySeating(9,1).equals("X")){
             e19.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(9,2).equals("")){
+        if(myPlane.returnEconomySeating(9,2).equals("X")){
             e29.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(9,3).equals("")){
+        if(myPlane.returnEconomySeating(9,3).equals("X")){
             e39.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(9,4).equals("")){
+        if(myPlane.returnEconomySeating(9,4).equals("X")){
             e49.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(9,5).equals("")){
+        if(myPlane.returnEconomySeating(9,5).equals("X")){
             e59.setBackground(Color.red);
         }
         /*NEW ROW*/
-        if(!myPlane.returnEconomySeating(10,0).equals("")){
+        if(myPlane.returnEconomySeating(10,0).equals("X")){
             e010.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(10,1).equals("")){
+        if(myPlane.returnEconomySeating(10,1).equals("X")){
             e110.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(10,2).equals("")){
+        if(myPlane.returnEconomySeating(10,2).equals("X")){
             e210.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(10,3).equals("")){
+        if(myPlane.returnEconomySeating(10,3).equals("X")){
             e310.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(10,4).equals("")){
+        if(myPlane.returnEconomySeating(10,4).equals("X")){
             e410.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(10,5).equals("")){
+        if(myPlane.returnEconomySeating(10,5).equals("X")){
             e510.setBackground(Color.red);
         }
         /*NEW ROW*/
-        if(!myPlane.returnEconomySeating(11,0).equals("")){
+        if(myPlane.returnEconomySeating(11,0).equals("X")){
             e011.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(11,1).equals("")){
+        if(myPlane.returnEconomySeating(11,1).equals("X")){
             e111.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(11,2).equals("")){
+        if(myPlane.returnEconomySeating(11,2).equals("X")){
             e211.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(11,3).equals("")){
+        if(myPlane.returnEconomySeating(11,3).equals("X")){
             e311.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(11,4).equals("")){
+        if(myPlane.returnEconomySeating(11,4).equals("X")){
             e411.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(11,5).equals("")){
+        if(myPlane.returnEconomySeating(11,5).equals("X")){
             e511.setBackground(Color.red);
         }
         /*NEW ROW*/
-        if(!myPlane.returnEconomySeating(12,0).equals("")){
+        if(myPlane.returnEconomySeating(12,0).equals("X")){
             e012.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(12,1).equals("")){
+        if(myPlane.returnEconomySeating(12,1).equals("X")){
             e112.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(12,2).equals("")){
+        if(myPlane.returnEconomySeating(12,2).equals("X")){
             e212.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(12,3).equals("")){
+        if(myPlane.returnEconomySeating(12,3).equals("X")){
             e312.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(12,4).equals("")){
+        if(myPlane.returnEconomySeating(12,4).equals("X")){
             e412.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(12,5).equals("")){
+        if(myPlane.returnEconomySeating(12,5).equals("X")){
             e512.setBackground(Color.red);
         }
         /*NEW ROW*/
-        if(!myPlane.returnEconomySeating(13,0).equals("")){
+        if(myPlane.returnEconomySeating(13,0).equals("X")){
             e013.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(13,1).equals("")){
+        if(myPlane.returnEconomySeating(13,1).equals("X")){
             e113.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(13,2).equals("")){
+        if(myPlane.returnEconomySeating(13,2).equals("X")){
             e213.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(13,3).equals("")){
+        if(myPlane.returnEconomySeating(13,3).equals("X")){
             e313.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(13,4).equals("")){
+        if(myPlane.returnEconomySeating(13,4).equals("X")){
             e413.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(13,5).equals("")){
+        if(myPlane.returnEconomySeating(13,5).equals("X")){
             e513.setBackground(Color.red);
         }
         /*NEW ROW*/
-        if(!myPlane.returnEconomySeating(14,0).equals("")){
+        if(myPlane.returnEconomySeating(14,0).equals("X")){
             e014.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(14,1).equals("")){
+        if(myPlane.returnEconomySeating(14,1).equals("X")){
             e114.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(14,2).equals("")){
+        if(myPlane.returnEconomySeating(14,2).equals("X")){
             e214.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(14,3).equals("")){
+        if(myPlane.returnEconomySeating(14,3).equals("X")){
             e314.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(14,4).equals("")){
+        if(myPlane.returnEconomySeating(14,4).equals("X")){
             e414.setBackground(Color.red);
         }
-        if(!myPlane.returnEconomySeating(14,5).equals("")){
+        if(myPlane.returnEconomySeating(14,5).equals("X")){
             e514.setBackground(Color.red);
         }
     }
@@ -1355,7 +1357,7 @@ public class JairlineGUI extends javax.swing.JFrame {
     private javax.swing.JTextField txtFldAvailableSeats;
     private javax.swing.JFormattedTextField txtFldNumTraveling;
     // End of variables declaration//GEN-END:variables
-    private String classChoice;
-    private String position;
+    private int classChoice;
+    private int position;
     Airplane myPlane;
 }
