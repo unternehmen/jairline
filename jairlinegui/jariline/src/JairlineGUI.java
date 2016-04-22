@@ -203,6 +203,46 @@ public class JairlineGUI extends javax.swing.JFrame {
 
         lblFirstClassSeating.setText("First Class Seating");
 
+        f00.setText("0");
+
+        f10.setText("1");
+
+        f20.setText("2");
+
+        f30.setText("3");
+
+        f01.setText("0");
+
+        f11.setText("1");
+
+        f21.setText("2");
+
+        f31.setText("3");
+
+        f02.setText("0");
+
+        f12.setText("1");
+
+        f22.setText("2");
+
+        f32.setText("3");
+
+        f03.setText("0");
+
+        f13.setText("1");
+
+        f23.setText("2");
+
+        f33.setText("3");
+
+        f04.setText("0");
+
+        f14.setText("1");
+
+        f24.setText("2");
+
+        f34.setText("3");
+
         lblEconomySeating.setText("Economy Seating");
 
         lblRow.setText("Row");
@@ -294,14 +334,14 @@ public class JairlineGUI extends javax.swing.JFrame {
                             .addComponent(rbtnWindow)
                             .addComponent(rbtnAsile)
                             .addComponent(rbtnMiddle))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(54, 54, 54)
                         .addComponent(lblFirstClassSeating)
-                        .addGap(147, 147, 147)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(lblEconomySeating))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(0, 214, Short.MAX_VALUE)
+                                .addGap(0, 182, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(f00)

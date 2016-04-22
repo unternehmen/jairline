@@ -5,6 +5,7 @@ public class Airplane {
   private String firstClass[][];
   private String economyClass[][];
   private String returnMessage;
+  private int seatRow, seatCol;
   private Scanner scanner;
   private File fFile;
   private File eFile;
@@ -84,21 +85,26 @@ public class Airplane {
 
       if (chosenClass == economyClass) {
         keyColumns[1] = 5;
-      } else {
+      } 
+      else {
         keyColumns[1] = 3;
       }
-    } else if (position == 2) {
+    } 
+    else if (position == 2) {
       if (chosenClass == economyClass) {
         keyColumns[0] = 2;
         keyColumns[1] = 3;
-      } else {
+      } 
+      else {
         keyColumns[0] = 1;
         keyColumns[1] = 2;
       }
-    } else if (chosenClass == economyClass && position == 3) {
+    } 
+    else if (chosenClass == economyClass && position == 3) {
       keyColumns[0] = 1;
-      keyColumns[2] = 4;
-    } else {
+      keyColumns[1] = 4;
+    } 
+    else {
       returnMessage = "Improper choice.";
       return;
     }
@@ -131,7 +137,8 @@ public class Airplane {
             if (j + k == keyColumns[0] || j + k == keyColumns[1]) {
               hasKey = true;
             }
-          } else {
+          } 
+          else {
             matched = false;
             break;
           }
@@ -140,6 +147,8 @@ public class Airplane {
         if (matched && hasKey) {
           matchRow = i;
           matchCol = j;
+          seatRow = i;
+          seatCol = j;
           break;
         }
       }
@@ -164,7 +173,10 @@ public class Airplane {
   }
 
   public String returnMessageForSeating(){
-    return returnMessage;
+      if (returnMessage.equals("To see where you will be sitting, look at the seating chart."))
+        return returnMessage + " You will be sitting in ROW: " + seatRow + " Column: " + seatCol;
+      else
+        return returnMessage;
 }
   public String returnFirstSeating(int x, int y){
       return firstClass[x][y];

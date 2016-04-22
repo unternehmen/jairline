@@ -47,15 +47,15 @@
                           <Component id="rbtnAsile" min="-2" max="-2" attributes="0"/>
                           <Component id="rbtnMiddle" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
                       <Component id="lblFirstClassSeating" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="147" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                       <Component id="lblEconomySeating" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <EmptySpace min="0" pref="214" max="32767" attributes="0"/>
+                              <EmptySpace min="0" pref="182" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="f00" min="-2" max="-2" attributes="0"/>
@@ -637,44 +637,104 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="f00">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="f10">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="f20">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="f30">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="3"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="f01">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="f11">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="f21">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="f31">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="3"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="f02">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="f12">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="f22">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="f32">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="3"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="f03">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="f13">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="f23">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="f33">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="3"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="f04">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="f14">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="f24">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="f34">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="3"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lblEconomySeating">
       <Properties>
