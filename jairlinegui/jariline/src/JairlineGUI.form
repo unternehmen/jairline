@@ -10,6 +10,12 @@
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
     <Property name="title" type="java.lang.String" value="J Airline"/>
+    <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+      <Color id="Default Cursor"/>
+    </Property>
+    <Property name="iconImages" type="java.util.List" editor="org.netbeans.modules.form.ComponentChooserEditor">
+      <ComponentRef name="null"/>
+    </Property>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -41,65 +47,70 @@
                           <Component id="txtFldNumTraveling" alignment="0" max="32767" attributes="0"/>
                           <Component id="lblTravelers" alignment="0" max="32767" attributes="0"/>
                           <Component id="lblSeatAvability" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btnBookIt" min="-2" max="-2" attributes="0"/>
                           <Component id="lblSeatingPosition" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="rbtnWindow" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="rbtnAsile" min="-2" max="-2" attributes="0"/>
                           <Component id="rbtnMiddle" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
-                      <Component id="lblFirstClassSeating" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="lblEconomySeating" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <EmptySpace min="0" pref="182" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="f00" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="f10" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="f20" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="f30" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="0" pref="207" max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="f00" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="f10" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="f20" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="f30" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="f01" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="f02" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="f03" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="f04" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="f11" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="f12" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="f13" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="f14" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="f21" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="f22" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="f23" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="f24" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="f34" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="f33" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="f32" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="f31" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Component id="lblFirstClassSeating" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="f01" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="f02" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="f03" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="f04" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="f11" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="f12" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="f13" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="f14" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="f21" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="f22" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="f23" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="f24" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="f34" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="f33" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="f32" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="f31" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
+                                  <Component id="jScrollPane1" max="32767" attributes="0"/>
                               </Group>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="jScrollPane1" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="btnBookIt" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -323,11 +334,15 @@
                                   </Group>
                               </Group>
                           </Group>
-                          <Component id="lblRow" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="lblRow" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="lblEconomySeating" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -578,8 +593,8 @@
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="lblSeatAvability" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jScrollPane1" min="-2" pref="110" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="89" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="btnBookIt" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -742,184 +757,454 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e00">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e10">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e20">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e30">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="3"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e40">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="4"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e50">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="5"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e01">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e11">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e21">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e31">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="3"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e41">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="4"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e51">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="5"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e02">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e12">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e22">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e32">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="3"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e42">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="4"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e52">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="5"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e03">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e13">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e23">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e33">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="3"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e43">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="4"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e53">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="5"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e04">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e14">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e24">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e34">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="3"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e44">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="4"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e54">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="5"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e05">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e15">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e25">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e35">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="3"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e45">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="4"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e55">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="5"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e06">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e16">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e26">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e36">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="3"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e46">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="4"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e56">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="5"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e07">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e17">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e27">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e37">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="3"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e47">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="4"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e57">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="5"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e08">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e18">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e28">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e38">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="3"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e48">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="4"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e58">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="5"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e09">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e19">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e29">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e39">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="3"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e49">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="4"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e59">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="5"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e010">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e110">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e210">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e310">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="3"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e410">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="4"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e510">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="5"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e011">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e111">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e211">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e311">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="3"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e411">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="4"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e511">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="5"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e012">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e112">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e212">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e312">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="3"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e412">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="4"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e512">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="5"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e013">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e113">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e213">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e313">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="3"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e413">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="4"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e513">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="5"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e014">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e114">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e214">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e314">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="3"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e414">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="4"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="e514">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="5"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lblRow">
       <Properties>

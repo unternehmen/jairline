@@ -5,7 +5,7 @@ public class Airplane {
   private String firstClass[][];
   private String economyClass[][];
   private String returnMessage;
-  private int seatRow, seatCol;
+  private int seatRow, seatCol, numPassengers;
   private Scanner scanner;
   private File fFile;
   private File eFile;
@@ -47,7 +47,6 @@ public class Airplane {
   }
 
   public void addPassenger(int classChoice, int passengers, int position) {
-    String line;
     String chosenClass[][];
     int numOfTravelers, i, j, k, keyColumns[], matchRow, matchCol;
     boolean matched, hasKey;
@@ -60,6 +59,7 @@ public class Airplane {
       returnMessage = "Improper choice.";
       return;
     }
+    numPassengers = passengers;
     numOfTravelers = passengers;
 
     /* The way this seating algorithm works is it makes sure all of the
@@ -173,8 +173,10 @@ public class Airplane {
   }
 
   public String returnMessageForSeating(){
-      if (returnMessage.equals("To see where you will be sitting, look at the seating chart."))
-        return returnMessage + " You will be sitting in ROW: " + seatRow + " Column: " + seatCol;
+      if(returnMessage.equals("To see where you will be sitting, look at the seating chart.") && numPassengers > 1)
+          return returnMessage + " You will be sitting in Row: " + seatRow + " Seats: " + seatCol + " through " + (seatCol + numPassengers - 1);
+      else if (returnMessage.equals("To see where you will be sitting, look at the seating chart."))
+        return returnMessage + " You will be sitting in Row: " + seatRow + " Seat: " + seatCol;
       else
         return returnMessage;
 }

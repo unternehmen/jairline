@@ -178,6 +178,8 @@ public class JairlineGUI extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("J Airline");
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setIconImages(null);
 
         lblClass.setText("Class");
 
@@ -244,6 +246,186 @@ public class JairlineGUI extends javax.swing.JFrame {
         f34.setText("3");
 
         lblEconomySeating.setText("Economy Seating");
+
+        e00.setText("0");
+
+        e10.setText("1");
+
+        e20.setText("2");
+
+        e30.setText("3");
+
+        e40.setText("4");
+
+        e50.setText("5");
+
+        e01.setText("0");
+
+        e11.setText("1");
+
+        e21.setText("2");
+
+        e31.setText("3");
+
+        e41.setText("4");
+
+        e51.setText("5");
+
+        e02.setText("0");
+
+        e12.setText("1");
+
+        e22.setText("2");
+
+        e32.setText("3");
+
+        e42.setText("4");
+
+        e52.setText("5");
+
+        e03.setText("0");
+
+        e13.setText("1");
+
+        e23.setText("2");
+
+        e33.setText("3");
+
+        e43.setText("4");
+
+        e53.setText("5");
+
+        e04.setText("0");
+
+        e14.setText("1");
+
+        e24.setText("2");
+
+        e34.setText("3");
+
+        e44.setText("4");
+
+        e54.setText("5");
+
+        e05.setText("0");
+
+        e15.setText("1");
+
+        e25.setText("2");
+
+        e35.setText("3");
+
+        e45.setText("4");
+
+        e55.setText("5");
+
+        e06.setText("0");
+
+        e16.setText("1");
+
+        e26.setText("2");
+
+        e36.setText("3");
+
+        e46.setText("4");
+
+        e56.setText("5");
+
+        e07.setText("0");
+
+        e17.setText("1");
+
+        e27.setText("2");
+
+        e37.setText("3");
+
+        e47.setText("4");
+
+        e57.setText("5");
+
+        e08.setText("0");
+
+        e18.setText("1");
+
+        e28.setText("2");
+
+        e38.setText("3");
+
+        e48.setText("4");
+
+        e58.setText("5");
+
+        e09.setText("0");
+
+        e19.setText("1");
+
+        e29.setText("2");
+
+        e39.setText("3");
+
+        e49.setText("4");
+
+        e59.setText("5");
+
+        e010.setText("0");
+
+        e110.setText("1");
+
+        e210.setText("2");
+
+        e310.setText("3");
+
+        e410.setText("4");
+
+        e510.setText("5");
+
+        e011.setText("0");
+
+        e111.setText("1");
+
+        e211.setText("2");
+
+        e311.setText("3");
+
+        e411.setText("4");
+
+        e511.setText("5");
+
+        e012.setText("0");
+
+        e112.setText("1");
+
+        e212.setText("2");
+
+        e312.setText("3");
+
+        e412.setText("4");
+
+        e512.setText("5");
+
+        e013.setText("0");
+
+        e113.setText("1");
+
+        e213.setText("2");
+
+        e313.setText("3");
+
+        e413.setText("4");
+
+        e513.setText("5");
+
+        e014.setText("0");
+
+        e114.setText("1");
+
+        e214.setText("2");
+
+        e314.setText("3");
+
+        e414.setText("4");
+
+        e514.setText("5");
 
         lblRow.setText("Row");
 
@@ -329,54 +511,56 @@ public class JairlineGUI extends javax.swing.JFrame {
                             .addComponent(txtFldNumTraveling)
                             .addComponent(lblTravelers, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lblSeatAvability)
-                            .addComponent(btnBookIt)
                             .addComponent(lblSeatingPosition)
                             .addComponent(rbtnWindow)
                             .addComponent(rbtnAsile)
                             .addComponent(rbtnMiddle))
-                        .addGap(54, 54, 54)
-                        .addComponent(lblFirstClassSeating)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lblEconomySeating))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(0, 182, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(f00)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(f10)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(f20)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(f30))
-                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(0, 207, Short.MAX_VALUE)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(f01)
-                                            .addComponent(f02)
-                                            .addComponent(f03)
-                                            .addComponent(f04))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(f11)
-                                            .addComponent(f12)
-                                            .addComponent(f13)
-                                            .addComponent(f14))
-                                        .addGap(18, 18, 18)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(f21)
-                                            .addComponent(f22)
-                                            .addComponent(f23)
-                                            .addComponent(f24))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(f34)
-                                            .addComponent(f33)
-                                            .addComponent(f32)
-                                            .addComponent(f31, javax.swing.GroupLayout.Alignment.TRAILING)))))
-                            .addComponent(jScrollPane1))
-                        .addGap(18, 18, 18)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(f00)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(f10)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(f20)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(f30))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(f01)
+                                                    .addComponent(f02)
+                                                    .addComponent(f03)
+                                                    .addComponent(f04))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(f11)
+                                                    .addComponent(f12)
+                                                    .addComponent(f13)
+                                                    .addComponent(f14))
+                                                .addGap(18, 18, 18)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(f21)
+                                                    .addComponent(f22)
+                                                    .addComponent(f23)
+                                                    .addComponent(f24))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(f34)
+                                                    .addComponent(f33)
+                                                    .addComponent(f32)
+                                                    .addComponent(f31, javax.swing.GroupLayout.Alignment.TRAILING)))
+                                            .addComponent(lblFirstClassSeating)))
+                                    .addComponent(jScrollPane1))
+                                .addGap(18, 18, 18))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btnBookIt)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -580,8 +764,11 @@ public class JairlineGUI extends javax.swing.JFrame {
                                         .addComponent(e414)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(e514))))
-                            .addComponent(lblRow))))
-                .addGap(73, 73, 73))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblRow)
+                                .addGap(18, 18, 18)
+                                .addComponent(lblEconomySeating)))))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -798,8 +985,8 @@ public class JairlineGUI extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(lblSeatAvability)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnBookIt)))
                 .addContainerGap(89, Short.MAX_VALUE))
         );
