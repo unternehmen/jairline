@@ -34,7 +34,6 @@ public class JairlineGUI extends javax.swing.JFrame {
 
         btngropupClasses = new javax.swing.ButtonGroup();
         btngroupSeatingPosition = new javax.swing.ButtonGroup();
-        lblTitle = new javax.swing.JLabel();
         lblClass = new javax.swing.JLabel();
         rbtnFirstClass = new javax.swing.JRadioButton();
         rbtnEconomyClass = new javax.swing.JRadioButton();
@@ -174,12 +173,11 @@ public class JairlineGUI extends javax.swing.JFrame {
         rbtnWindow = new javax.swing.JRadioButton();
         rbtnAsile = new javax.swing.JRadioButton();
         rbtnMiddle = new javax.swing.JRadioButton();
-        txtFldAvailableSeats = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextPane1 = new javax.swing.JTextPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblTitle.setText("J Airline");
+        setTitle("J Airline");
 
         lblClass.setText("Class");
 
@@ -239,7 +237,7 @@ public class JairlineGUI extends javax.swing.JFrame {
 
         lblRow14.setText("14");
 
-        lblSeatAvability.setText("Seat Availability");
+        lblSeatAvability.setText("Seat Availability Message");
 
         btnBookIt.setText("Book It");
         btnBookIt.addActionListener(new java.awt.event.ActionListener() {
@@ -274,74 +272,70 @@ public class JairlineGUI extends javax.swing.JFrame {
             }
         });
 
+        jScrollPane1.setViewportView(jTextPane1);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(358, 358, 358)
-                .addComponent(lblTitle)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtFldAvailableSeats)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(rbtnFirstClass)
-                                .addComponent(rbtnEconomyClass, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lblClass, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(txtFldNumTraveling)
-                                .addComponent(lblTravelers, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lblSeatAvability))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(rbtnFirstClass)
+                            .addComponent(rbtnEconomyClass, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblClass, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txtFldNumTraveling)
+                            .addComponent(lblTravelers, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblSeatAvability)
                             .addComponent(btnBookIt)
                             .addComponent(lblSeatingPosition)
                             .addComponent(rbtnWindow)
                             .addComponent(rbtnAsile)
                             .addComponent(rbtnMiddle))
-                        .addGap(0, 53, Short.MAX_VALUE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(lblFirstClassSeating)
                         .addGap(147, 147, 147)
                         .addComponent(lblEconomySeating))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(f00)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(f10)
-                                .addGap(18, 18, 18)
-                                .addComponent(f20)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(f30))
-                            .addGroup(layout.createSequentialGroup()
+                                .addGap(0, 214, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(f01)
-                                    .addComponent(f02)
-                                    .addComponent(f03)
-                                    .addComponent(f04))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(f11)
-                                    .addComponent(f12)
-                                    .addComponent(f13)
-                                    .addComponent(f14))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(f21)
-                                    .addComponent(f22)
-                                    .addComponent(f23)
-                                    .addComponent(f24))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(f34)
-                                    .addComponent(f33)
-                                    .addComponent(f32)
-                                    .addComponent(f31, javax.swing.GroupLayout.Alignment.TRAILING))))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(f00)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(f10)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(f20)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(f30))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(f01)
+                                            .addComponent(f02)
+                                            .addComponent(f03)
+                                            .addComponent(f04))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(f11)
+                                            .addComponent(f12)
+                                            .addComponent(f13)
+                                            .addComponent(f14))
+                                        .addGap(18, 18, 18)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(f21)
+                                            .addComponent(f22)
+                                            .addComponent(f23)
+                                            .addComponent(f24))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(f34)
+                                            .addComponent(f33)
+                                            .addComponent(f32)
+                                            .addComponent(f31, javax.swing.GroupLayout.Alignment.TRAILING)))))
+                            .addComponent(jScrollPane1))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -553,8 +547,6 @@ public class JairlineGUI extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lblTitle)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -766,10 +758,10 @@ public class JairlineGUI extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(lblSeatAvability)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtFldAvailableSeats, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnBookIt)))
-                .addContainerGap(60, Short.MAX_VALUE))
+                .addContainerGap(89, Short.MAX_VALUE))
         );
 
         pack();
@@ -777,22 +769,22 @@ public class JairlineGUI extends javax.swing.JFrame {
 
     private void rbtnEconomyClassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtnEconomyClassActionPerformed
         classChoice = 2;
-        rbtnMiddle.setVisible(true);
+        rbtnMiddle.setEnabled(true);
     }//GEN-LAST:event_rbtnEconomyClassActionPerformed
 
     private void rbtnFirstClassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtnFirstClassActionPerformed
         classChoice = 1;
-        rbtnMiddle.setVisible(false);
+        rbtnMiddle.setEnabled(false);
     }//GEN-LAST:event_rbtnFirstClassActionPerformed
 
     private void btnBookItActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBookItActionPerformed
         myPlane.addPassenger(classChoice, Integer.parseInt(txtFldNumTraveling.getText()), position);   
         checkSeatingAvailability();
-        txtFldAvailableSeats.setText(myPlane.returnMessageForSeating());
+        jTextPane1.setText(myPlane.returnMessageForSeating());
         txtFldNumTraveling.setText("");
         btngropupClasses.clearSelection();
         btngroupSeatingPosition.clearSelection();
-        rbtnMiddle.setVisible(true);
+        rbtnMiddle.setEnabled(true);
         try{
             myPlane.saveFile();
         }
@@ -1326,6 +1318,8 @@ public class JairlineGUI extends javax.swing.JFrame {
     private javax.swing.JButton f32;
     private javax.swing.JButton f33;
     private javax.swing.JButton f34;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextPane jTextPane1;
     private javax.swing.JLabel lblClass;
     private javax.swing.JLabel lblEconomySeating;
     private javax.swing.JLabel lblFirstClassSeating;
@@ -1347,14 +1341,12 @@ public class JairlineGUI extends javax.swing.JFrame {
     private javax.swing.JLabel lblRow9;
     private javax.swing.JLabel lblSeatAvability;
     private javax.swing.JLabel lblSeatingPosition;
-    private javax.swing.JLabel lblTitle;
     private javax.swing.JLabel lblTravelers;
     private javax.swing.JRadioButton rbtnAsile;
     private javax.swing.JRadioButton rbtnEconomyClass;
     private javax.swing.JRadioButton rbtnFirstClass;
     private javax.swing.JRadioButton rbtnMiddle;
     private javax.swing.JRadioButton rbtnWindow;
-    private javax.swing.JTextField txtFldAvailableSeats;
     private javax.swing.JFormattedTextField txtFldNumTraveling;
     // End of variables declaration//GEN-END:variables
     private int classChoice;
