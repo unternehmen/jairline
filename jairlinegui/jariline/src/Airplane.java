@@ -181,9 +181,9 @@ public class Airplane {
 
   public String returnMessageForSeating(){
       if(returnMessage.equals("To see where you will be sitting, look at the seating chart.") && numPassengers > 1)
-          return returnMessage + " You will be sitting in Row: " + seatRow + " Seats: " + seatCol + " through " + (seatCol + numPassengers - 1);
+          return returnMessage + "\nYou will be sitting in Row: " + seatRow + " Seats: " + seatCol + " through " + (seatCol + numPassengers - 1);
       else if (returnMessage.equals("To see where you will be sitting, look at the seating chart."))
-        return returnMessage + " You will be sitting in Row: " + seatRow + " Seat: " + seatCol;
+        return returnMessage + "\nYou will be sitting in Row: " + seatRow + " Seat: " + seatCol;
       else
         return returnMessage;
 }
