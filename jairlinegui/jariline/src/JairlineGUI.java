@@ -4,7 +4,9 @@ import java.io.*;
 /**
  * A GUI that allows us to add passengers to our plane
  *
- * @author Christopher Murphy, Brandon Duke, and Claire Wallace
+ * @author Christopher Murphy
+ * @author Brandon Duke
+ * @author Claire Wallace
  * @version 4/23/16
  */
 

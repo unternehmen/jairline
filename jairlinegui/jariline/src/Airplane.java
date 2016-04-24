@@ -4,7 +4,9 @@ import java.io.*;
  * A class that allows us to construct an airplane with first and economy seating
  * and find a place for a person or group to sit based on preferences.
  *
- * @author Christopher Murphy, Brandon Duke, and Claire Wallace
+ * @author Christopher Murphy
+ * @author Brandon Duke
+ * @author Claire Wallace
  * @version 4/23/16
  */
 
