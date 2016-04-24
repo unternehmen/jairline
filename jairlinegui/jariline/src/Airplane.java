@@ -1,22 +1,34 @@
 import java.io.*;
-import java.util.Scanner;
+
+/**
+ * A class that allows us to construct an airplane with first and economy seating
+ * and find a place for a person or group to sit based on preferences.
+ *
+ * @author Christopher Murphy, Brandon Duke, and Claire Wallace
+ * @version 4/23/16
+ */
 
 public class Airplane {
   private String firstClass[][];
   private String economyClass[][];
   private String returnMessage;
   private int seatRow, seatCol, numPassengers;
-  private Scanner scanner;
   private File fFile;
   private File eFile;
 
+  /**
+   * @throws IOException
+   * @throws ClassNotFoundException
+   * Both are thrown so we can read from a file
+   *
+   * If the files our arrays are stored in exist, then we use them,
+   * otherwise we make new arrays.
+   */
   public Airplane() throws IOException, ClassNotFoundException {
     fFile = new File("firstSeats.dat");
     eFile = new File("econSeats.dat");
 
     int i, j;
-
-    /*this.scanner = scanner;*/
 
     if (fFile.exists() && eFile.exists()){
       FileInputStream firstFIS = new FileInputStream(fFile);
@@ -46,7 +58,13 @@ public class Airplane {
     }
   }
 
-  public void addPassenger(int classChoice, String passengers, int position) {
+  /**
+   * @param classChoice the chosen type of class
+   * @param passengers the number of passengers
+   * @param position where people want to sit
+   * We then use all of this data in our algorithm to find a seat, or range, that matches the conditions
+   */
+  public void addPassenger(int classChoice, int passengers, int position) {
     String chosenClass[][];
     int numOfTravelers, i, j, k, keyColumns[], matchRow, matchCol;
     boolean matched, hasKey;
@@ -59,15 +77,8 @@ public class Airplane {
       returnMessage = "Improper choice.";
       return;
     }
-    
-    if (passengers.equals("")){
-        returnMessage = "Please enter a number of pasengers.";
-        return;
-    }
-    else {
-        numPassengers = Integer.parseInt(passengers);
-        numOfTravelers = Integer.parseInt(passengers);
-    }
+    numPassengers = passengers;
+    numOfTravelers = passengers;
 
     /* The way this seating algorithm works is it makes sure all of the
      * travelers can sit in the same row, together, and that at least one
@@ -179,22 +190,43 @@ public class Airplane {
     returnMessage = "To see where you will be sitting, look at the seating chart.";
   }
 
+  /**
+   * @return Any messages because of adding a passenger, as well as, seating
+   */
   public String returnMessageForSeating(){
       if(returnMessage.equals("To see where you will be sitting, look at the seating chart.") && numPassengers > 1)
-          return returnMessage + "\nYou will be sitting in Row: " + seatRow + " Seats: " + seatCol + " through " + (seatCol + numPassengers - 1);
+          return returnMessage + " You will be sitting in Row: " + seatRow + " Seats: " + seatCol + " through " + (seatCol + numPassengers - 1);
       else if (returnMessage.equals("To see where you will be sitting, look at the seating chart."))
-        return returnMessage + "\nYou will be sitting in Row: " + seatRow + " Seat: " + seatCol;
+        return returnMessage + " You will be sitting in Row: " + seatRow + " Seat: " + seatCol;
       else
         return returnMessage;
-}
+  }
+
+  /**
+   * @param x row in seating
+   * @param y position in row of seating
+   * @return the value of that seat, taken or not
+   */
   public String returnFirstSeating(int x, int y){
       return firstClass[x][y];
   }
-  
+
+  /**
+   * @param x row in seating
+   * @param y position in row of seating
+   * @return the value of that seat, taken or not
+     */
   public String returnEconomySeating(int x, int y){
       return economyClass[x][y];
   }
-  
+
+  /**
+   * @throws IOException
+   * @throws ClassNotFoundException
+   * Both are thrown so we can write to a file
+   *
+   * We use this so we can save our arrays and use them when running again.
+     */
   public void saveFile() throws IOException, ClassNotFoundException {
     FileOutputStream firstFOS = new FileOutputStream(fFile);
     ObjectOutputStream firstOOS = new ObjectOutputStream(firstFOS);

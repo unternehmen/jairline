@@ -106,10 +106,8 @@
                               </Group>
                               <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
                               <Component id="btnBookIt" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
-                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -397,147 +395,142 @@
                                       <Component id="f34" min="-2" pref="29" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
+                                      <Component id="f21" min="-2" pref="29" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="f22" min="-2" pref="29" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="f23" min="-2" pref="29" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="f24" min="-2" pref="29" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="f11" min="-2" pref="29" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="f12" min="-2" pref="29" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="f13" min="-2" pref="29" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="f14" min="-2" pref="29" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="0" attributes="0">
                                               <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Group type="102" alignment="0" attributes="0">
-                                                      <Group type="103" groupAlignment="0" attributes="0">
-                                                          <Component id="e01" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                          <Component id="e11" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                          <Component id="e21" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                          <Component id="e31" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                          <Component id="e41" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                          <Component id="e51" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <EmptySpace max="-2" attributes="0"/>
-                                                      <Group type="103" groupAlignment="0" attributes="0">
-                                                          <Component id="e02" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                          <Component id="e12" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                          <Component id="e22" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                          <Component id="e32" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                          <Component id="e42" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                          <Component id="e52" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                      </Group>
-                                                  </Group>
-                                                  <Group type="102" alignment="0" attributes="0">
-                                                      <Component id="lblRow1" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                                      <Component id="lblRow2" min="-2" max="-2" attributes="0"/>
-                                                  </Group>
+                                                  <Component id="e01" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                                  <Component id="e11" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                                  <Component id="e21" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                                  <Component id="e31" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                                  <Component id="e41" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                                  <Component id="e51" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
                                               </Group>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="lblRow3" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="e03" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e13" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e23" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e33" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e43" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e53" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                              </Group>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="lblRow4" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="e04" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e14" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e24" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e34" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e44" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e54" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                              </Group>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="lblRow5" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="e05" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e15" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e25" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e35" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e45" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e55" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                              </Group>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="lblRow6" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="e06" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e16" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e26" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e36" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e46" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e56" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                              </Group>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="lblRow7" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="e07" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e17" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e27" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e37" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e47" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e57" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                              </Group>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="lblRow8" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="e08" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e18" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e28" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e38" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e48" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e58" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                              </Group>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="lblRow9" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="e09" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e19" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e29" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e39" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e49" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e59" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                              </Group>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="lblRow10" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="e010" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e110" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e210" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e310" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e410" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e510" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                              </Group>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="e011" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e111" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e211" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e311" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e411" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="e511" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="lblRow11" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="e02" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                                  <Component id="e12" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                                  <Component id="e22" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                                  <Component id="e32" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                                  <Component id="e42" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                                  <Component id="e52" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
-                                              <Component id="f21" min="-2" pref="29" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="f22" min="-2" pref="29" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="f23" min="-2" pref="29" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="f24" min="-2" pref="29" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Component id="f11" min="-2" pref="29" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="f12" min="-2" pref="29" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="f13" min="-2" pref="29" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="f14" min="-2" pref="29" max="-2" attributes="0"/>
+                                              <Component id="lblRow1" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                              <Component id="lblRow2" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblRow3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="e03" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e13" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e23" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e33" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e43" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e53" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lblRow4" min="-2" max="-2" attributes="0"/>
+                                          <Component id="e04" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e14" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e24" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e34" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e44" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e54" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lblRow5" min="-2" max="-2" attributes="0"/>
+                                          <Component id="e05" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e15" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e25" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e35" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e45" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e55" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lblRow6" min="-2" max="-2" attributes="0"/>
+                                          <Component id="e06" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e16" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e26" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e36" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e46" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e56" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lblRow7" min="-2" max="-2" attributes="0"/>
+                                          <Component id="e07" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e17" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e27" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e37" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e47" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e57" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lblRow8" min="-2" max="-2" attributes="0"/>
+                                          <Component id="e08" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e18" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e28" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e38" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e48" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e58" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lblRow9" min="-2" max="-2" attributes="0"/>
+                                          <Component id="e09" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e19" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e29" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e39" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e49" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e59" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lblRow10" min="-2" max="-2" attributes="0"/>
+                                          <Component id="e010" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e110" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e210" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e310" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e410" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e510" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="e011" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e111" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e211" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e311" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e411" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="e511" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="lblRow11" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="0" attributes="0">
                                               <Group type="103" groupAlignment="0" attributes="0">
                                                   <Component id="e012" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
@@ -549,7 +542,6 @@
                                               </Group>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="lblRow13" min="-2" max="-2" attributes="0"/>
                                                   <Group type="102" alignment="0" attributes="0">
                                                       <Group type="103" groupAlignment="0" attributes="0">
                                                           <Component id="e013" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
@@ -570,6 +562,7 @@
                                                           <Component id="lblRow14" alignment="0" min="-2" max="-2" attributes="0"/>
                                                       </Group>
                                                   </Group>
+                                                  <Component id="lblRow13" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                           <Component id="lblRow12" min="-2" max="-2" attributes="0"/>
@@ -578,7 +571,6 @@
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="lblClass" min="-2" pref="27" max="-2" attributes="0"/>
@@ -604,9 +596,9 @@
                       <Component id="jScrollPane1" min="-2" pref="89" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="btnBookIt" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
+              <EmptySpace pref="89" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -1356,12 +1348,5 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JLabel" name="jLabel1">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/JAirlineText.png"/>
-        </Property>
-      </Properties>
-    </Component>
   </SubComponents>
 </Form>
